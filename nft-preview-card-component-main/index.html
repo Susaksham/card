@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  
+  <script src="https://kit.fontawesome.com/e501267891.js" crossorigin="anonymous"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   .top{
+     display: flex;
+     width:100%;
+     height: 100vh;
+     background-color: hsl(228, 45%, 44%);
+     justify-content: center;
+     align-items: center;
+     background-color: hsl(217, 54%, 11%);
+     
+   }
+    .main{
+      height:500px;
+      width:320px;
+      padding: 20px  26px ;
+      
+     
+      border-radius: 10px;
+      background-color:hsl(216, 50%, 16%);
+      display: flex;
+      
+
+    }
+    
+    .main h2{
+      line-height: 3.5rem;
+      color: hsl(178, 100%, 50%);
+    }
+    .main p{
+      line-height: 1.5rem;
+      font-size : 18px;
+      color: hsl(0, 0%, 100%);
+      font-weight:200;
+      
+    }
+    .p{
+      margin-top: 10px;
+      
+    }
+     .p img{
+      width: 30px;
+      float: left;
+      
+    }
+    .p p{
+      float:left;
+      padding:7px 4px;
+      margin-left:4px;
+      
+
+    }
+    .flex{
+      line-height: 2.5rem;
+    }
+    
+    .img{
+      display: inline-block;
+    }
+  
+    .img img{
+      width: 260px;
+      height: 265px;
+      border-radius: 5px;
+      margin-left: 4px;
+    }
+    .flex{
+      display:flex;
+      justify-content:space-between;
+    }
+    hr{border:  solid hsl(0, 0%, 100%);
+      border-bottom: none;
+      border-width:1px;
+
+    }
+    span{
+      color: hsl(178, 100%, 50%);
+    }
+    .color{
+      color: hsl(178, 100%, 50%);
+    }
+    .time{
+      color:hsl(0, 0%, 100%);
+    }
+    
+    @media(max-width:375px){
+      body{
+     display: flex;
+     width:375px;
+     height: 100%;
+     background-color: hsl(228, 45%, 44%);
+     justify-content: center;
+     align-items: center;
+     background-color: hsl(217, 54%, 11%);}
+     .main{
+      height:500px;
+      width:320px;
+      padding: 20px  26px ;
+      
+      display: block;
+      
+      border-radius: 10px;
+      background-color:hsl(216, 50%, 16%);
+      
+      
+
+    }
+     
+     
+   }
+     
+ 
+   
+   
+  </style>
+</head>
+<body>
+  <div class="top">
+  <div class="main">
+    <div class="flexmain">
+    <div class="img"><img src="images/image-equilibrium.jpg" alt=""></div>
+
+  <h2>Equilibrium #3429</h2>
+
+  <p>Our Equilibrium collection promotes balance and calm.</p>
+  <div class="flex"> 
+    <div class="color"><i class="fab fa-ethereum"></i> 0.041 ETH</div> 
+   <div class="time"><i class="fas fa-clock"></i>3 days left</div>
+   </div>
+   <hr>
+
+
+
+  
+   <div class="p"><img src="images/image-avatar.png" alt=""><p>Creation of <span>Susaksham Jain</span> </p> </div>
+
+  </div>
+</div>
+
+</div>
+</body>
+</html>
